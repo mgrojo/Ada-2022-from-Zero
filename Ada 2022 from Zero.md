@@ -188,7 +188,7 @@ This is the program. Press its Copy button:
 
 hello.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Hello is
@@ -349,7 +349,7 @@ This is the program you built in setup. Here's what each part does.
 
 hello.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Hello is
@@ -407,7 +407,7 @@ With `with` but no `use`, the short name fails. Look at where GNAT says `Put_Lin
 
 short_only.adb
 
-```
+```ada
 with Ada.Text_IO;
 
 procedure Short_Only is
@@ -430,7 +430,7 @@ The full name works with no `use` at all:
 
 full_names.adb
 
-```
+```ada
 with Ada.Text_IO;
 
 procedure Full_Names is
@@ -453,7 +453,7 @@ And with no `with`, GNAT has never heard of `Put_Line`, and suggests the lines y
 
 no_with.adb
 
-```
+```ada
 procedure No_With is
 begin
    Put_Line ("Hello");
@@ -572,7 +572,7 @@ Statement 3 ends a line that already has text, so nothing looks different except
 
 put_demo.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Put_Demo is
@@ -597,7 +597,7 @@ The program ends without finishing its line, so GNAT finishes it at exit. That's
 
 put_line_demo.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Put_Line_Demo is
@@ -622,7 +622,7 @@ three
 
 new_line_demo.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure New_Line_Demo is
@@ -699,7 +699,7 @@ Solution
 
 card.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Card is
@@ -740,7 +740,7 @@ Have a nice day
 
 greet_me.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Greet_Me is
@@ -770,7 +770,7 @@ A missing semicolon, single quotes around a string, and `end Greet` where the pr
 
 greet_me.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Greet_Me is
@@ -814,7 +814,7 @@ Solution
 
 roses.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Roses is
@@ -869,7 +869,7 @@ Solution
 
 hello.adb
 
-```
+```ada
 with Ada.Text_IO;
 
 procedure Hello is
@@ -921,7 +921,7 @@ Here's what that means in practice. The same symbols do different things dependi
 
 same_symbols.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Same_Symbols is
@@ -958,7 +958,7 @@ When an operation doesn't exist for a type, the program doesn't compile. Strings
 
 add_text.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Add_Text is
@@ -1004,7 +1004,7 @@ A variable is a named box that holds one value of one type. You choose the type 
 
 variables.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Variables is
@@ -1051,7 +1051,7 @@ Here are three broken names in one program:
 
 bad_names.adb
 
-```
+```ada
 procedure Bad_Names is
    2nd_Place    : Integer := 2;
    Total Amount : Integer := 0;
@@ -1088,7 +1088,7 @@ It depends on the compiler, which is why the numbers can look vague. The Ada sta
 
 limits.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Limits is
@@ -1172,7 +1172,7 @@ Solution
 
 truck.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Truck is
@@ -1224,7 +1224,7 @@ Solution
 
 swap.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Swap is
@@ -1257,7 +1257,7 @@ Work out on paper what this prints, including the spacing, before you run it.
 
 predict.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Predict is
@@ -1303,7 +1303,7 @@ Running? TRUE, initial J
 
 mix_up.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Mix_Up is
@@ -1342,7 +1342,7 @@ gnatmake: "mix_up.adb" compilation error
 
 mix_up.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Mix_Up is
@@ -1409,7 +1409,7 @@ Three words you'll see in GNAT's messages. An *expression* is anything that work
 
 arithmetic.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
@@ -1466,7 +1466,7 @@ When an expression has several operators, Ada follows the rules you learned at s
 
 precedence.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Precedence is
@@ -1506,7 +1506,7 @@ When both sides of `/` are whole numbers, Ada does whole-number division, the ki
 
 int_div.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
@@ -1558,7 +1558,7 @@ Both give a remainder, and for positive numbers they agree. They only differ whe
 
 mod_table.adb
 
-```
+```ada
 with Ada.Text_IO;         use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
@@ -1603,7 +1603,7 @@ Many languages quietly turn an Integer into a Float when you mix the two. Ada re
 
 mix.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Mix is
@@ -1631,7 +1631,7 @@ Converting can change the value, so it's worth knowing exactly how:
 
 conversions.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
@@ -1719,7 +1719,7 @@ Solution
 
 temp.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
@@ -1767,7 +1767,7 @@ Solution
 
 change.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Change is
@@ -1822,7 +1822,7 @@ Solution
 
 clock.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Clock is
@@ -1866,7 +1866,7 @@ Solution
 
 average_score.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
@@ -1901,7 +1901,7 @@ Work out what each line prints before you run it. Every line uses a rule from th
 
 predict_math.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Predict_Math is
@@ -1944,7 +1944,7 @@ Programs get interesting when they react to input. In the terminals below, what 
 
 ask.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Ask is
@@ -1984,7 +1984,7 @@ The usual place to create variables is between `is` and `begin`. But that happen
 
 no_size.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure No_Size is
@@ -2009,7 +2009,7 @@ Give it a length and it compiles, but now only an answer exactly 10 characters l
 
 fixed_size.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Fixed_Size is
@@ -2048,7 +2048,7 @@ A declare block is a small box you can open anywhere a statement could go. It ha
 
 declare_demo.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Declare_Demo is
@@ -2087,7 +2087,7 @@ Bye.
 
 out_of_scope.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Out_Of_Scope is
@@ -2182,7 +2182,7 @@ Solution
 
 calc.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Calc is
@@ -2233,7 +2233,7 @@ Solution
 
 fuel.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
@@ -2284,7 +2284,7 @@ Solution
 
 name_tag.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Name_Tag is
@@ -2333,7 +2333,7 @@ Ordered 40 x bolts
 
 order.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Order is
@@ -2370,7 +2370,7 @@ The two blocks sit side by side, so `Item` is gone by the time the second block 
 
 order.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Order is
@@ -2407,7 +2407,7 @@ if, elsif, else and case let a program take different paths.
 
 decide.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Decide is
@@ -2468,7 +2468,7 @@ Conditions combine with `and`, `or` and `not`. This table shows every case:
 
 short_circuit.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Short_Circuit is
@@ -2508,7 +2508,7 @@ Does `A and B or C` mean `(A and B) or C` or `A and (B or C)`? Instead of a rule
 
 and_or.adb
 
-```
+```ada
 procedure And_Or is
    Year    : constant Integer := 2028;
    Is_Leap : Boolean;
@@ -2531,7 +2531,7 @@ A `case` picks a branch by comparing one value against lists of *choices*. A cho
 
 case_missing.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Case_Missing is
@@ -2600,7 +2600,7 @@ Solution
 
 even_odd.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Even_Odd is
@@ -2652,7 +2652,7 @@ Solution
 
 largest.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Largest is
@@ -2717,7 +2717,7 @@ Solution
 
 leap.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Leap is
@@ -2755,7 +2755,7 @@ Repeating work is what computers are for. Ada has three loop shapes.
 
 loops.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Loops is
@@ -2804,7 +2804,7 @@ A range only counts up. If A is bigger than B, the range is empty and the loop r
 
 empty_range.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Empty_Range is
@@ -2875,7 +2875,7 @@ Solution
 
 sum_100.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Sum_100 is
@@ -2931,7 +2931,7 @@ Solution
 
 fizz_buzz.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Fizz_Buzz is
@@ -3048,7 +3048,7 @@ Solution
 
 hailstone.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Hailstone is
@@ -3083,7 +3083,7 @@ Ada's strongest idea: describe what values make sense, and let the compiler and 
 
 my_types.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure My_Types is
@@ -3136,7 +3136,7 @@ Both of these hold 0 to 100, but they behave very differently:
 
 subtype_vs_type.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Subtype_Vs_Type is
@@ -3169,7 +3169,7 @@ A `type` declaration makes a brand-new type. `Percent` holds the same numbers, b
 
 units.adb
 
-```
+```ada
 procedure Units is
    type Celsius    is new Float;
    type Fahrenheit is new Float;
@@ -3231,7 +3231,7 @@ Solution
 
 months.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Months is
@@ -3276,7 +3276,7 @@ Solution
 
 dice.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Dice is
@@ -3330,7 +3330,7 @@ Solution
 
 traffic.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Traffic is
@@ -3376,7 +3376,7 @@ An array holds many values of one type, side by side, each with an index.
 
 arrays.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Arrays is
@@ -3454,7 +3454,7 @@ Ada checks every index. Asking for an element that isn't there stops the program
 
 bad_index.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Bad_Index is
@@ -3517,7 +3517,7 @@ Solution
 
 min_max.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Min_Max is
@@ -3570,7 +3570,7 @@ Solution
 
 reverse_array.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Reverse_Array is
@@ -3627,7 +3627,7 @@ Solution
 
 week_hours.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Week_Hours is
@@ -3679,7 +3679,7 @@ Name a piece of work once, then use it anywhere. This is how big programs stay r
 
 subprograms.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Subprograms is
@@ -3755,7 +3755,7 @@ A `function` calculates and `return`s a value, so you use it inside an expressio
 
 in_param.adb
 
-```
+```ada
 procedure In_Param is
 
    procedure Double (X : Integer) is
@@ -3787,7 +3787,7 @@ A precondition (`Pre`) says what must be true when the function is called; a pos
 
 contracts.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Contracts is
@@ -3856,7 +3856,7 @@ Solution
 
 primes.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Primes is
@@ -3920,7 +3920,7 @@ Solution
 
 factorial_demo.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Factorial_Demo is
@@ -3972,7 +3972,7 @@ Solution
 
 stats.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
@@ -4023,7 +4023,7 @@ A String is an array of Characters, so everything from lesson 8 applies, plus a 
 
 strings.adb
 
-```
+```ada
 with Ada.Text_IO;             use Ada.Text_IO;
 with Ada.Strings;             use Ada.Strings;
 with Ada.Strings.Fixed;       use Ada.Strings.Fixed;
@@ -4085,7 +4085,7 @@ A plain String can't change length. `Name : String := "Bob";` then `Name := "Rob
 
 unbounded_mix.adb
 
-```
+```ada
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 
 procedure Unbounded_Mix is
@@ -4149,7 +4149,7 @@ Solution
 
 palindrome.adb
 
-```
+```ada
 with Ada.Text_IO;             use Ada.Text_IO;
 with Ada.Characters.Handling; use Ada.Characters.Handling;
 
@@ -4216,7 +4216,7 @@ Solution
 
 vowels.adb
 
-```
+```ada
 with Ada.Text_IO;             use Ada.Text_IO;
 with Ada.Characters.Handling; use Ada.Characters.Handling;
 
@@ -4272,7 +4272,7 @@ Solution
 
 caesar.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Caesar is
@@ -4345,7 +4345,7 @@ Solution
 
 vowels_y.adb
 
-```
+```ada
 with Ada.Text_IO;             use Ada.Text_IO;
 with Ada.Characters.Handling; use Ada.Characters.Handling;
 
@@ -4399,7 +4399,7 @@ A record groups values of different types that belong together, such as a part's
 
 records.adb
 
-```
+```ada
 with Ada.Text_IO;           use Ada.Text_IO;
 with Ada.Strings;           use Ada.Strings;
 with Ada.Strings.Fixed;     use Ada.Strings.Fixed;
@@ -4463,7 +4463,7 @@ The price is stored as whole cents in a Natural, not as dollars in a Float. A Fl
 
 float_money.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
@@ -4531,7 +4531,7 @@ Solution
 
 rectangles.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
@@ -4586,7 +4586,7 @@ Solution
 
 students.adb
 
-```
+```ada
 with Ada.Text_IO;           use Ada.Text_IO;
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 
@@ -4652,7 +4652,7 @@ Solution
 
 points.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Points is
@@ -4705,7 +4705,7 @@ Code that uses a package is called a *client* of it, and clients only ever see t
 
 temperature.ads
 
-```
+```ada
 package Temperature is
 
    type Celsius    is new Float;
@@ -4735,7 +4735,7 @@ end Temperature;
 
 main.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 with Temperature;       use Temperature;
@@ -4798,7 +4798,7 @@ GNAT checks the body against the specification. Every subprogram the specificati
 
 temperature.ads
 
-```
+```ada
 package Temperature is
 
    type Celsius    is new Float;
@@ -4825,7 +4825,7 @@ end Temperature;
 
 main.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 with Temperature;  use Temperature;
 
@@ -4851,7 +4851,7 @@ Anything declared only in the body is invisible to clients. That's the place for
 
 temperature.ads
 
-```
+```ada
 package Temperature is
 
    type Celsius    is new Float;
@@ -4867,7 +4867,7 @@ end Temperature;
 
 temperature.adb
 
-```
+```ada
 package body Temperature is
 
    --  Only the body can see this: it isn't in the spec.
@@ -4911,7 +4911,7 @@ A specification can also hide the inside of a type. `type Account is private;` t
 
 bank_accounts.ads
 
-```
+```ada
 package Bank_Accounts is
 
    type Account is private;
@@ -4936,7 +4936,7 @@ end Bank_Accounts;
 
 bank_accounts.adb
 
-```
+```ada
 package body Bank_Accounts is
 
    function Balance (A : Account) return Natural is (A.Cents);
@@ -4956,7 +4956,7 @@ end Bank_Accounts;
 
 main.adb
 
-```
+```ada
 with Ada.Text_IO;   use Ada.Text_IO;
 with Bank_Accounts; use Bank_Accounts;
 
@@ -4985,7 +4985,7 @@ Here's a client that tries to reach inside anyway. The specification and body ar
 
 main.adb
 
-```
+```ada
 with Ada.Text_IO;   use Ada.Text_IO;
 with Bank_Accounts; use Bank_Accounts;
 
@@ -5103,7 +5103,7 @@ Solution
 
 number_tools.ads
 
-```
+```ada
 package Number_Tools is
 
    function Is_Prime (N : Integer) return Boolean;
@@ -5117,7 +5117,7 @@ end Number_Tools;
 
 number_tools.adb
 
-```
+```ada
 package body Number_Tools is
 
    function Is_Prime (N : Integer) return Boolean is
@@ -5164,7 +5164,7 @@ end Number_Tools;
 
 main.adb
 
-```
+```ada
 with Ada.Text_IO;  use Ada.Text_IO;
 with Number_Tools; use Number_Tools;
 
@@ -5202,7 +5202,7 @@ After reset: 0
 
 tally.ads
 
-```
+```ada
 package Tally is
 
    type Counter is private;
@@ -5226,7 +5226,7 @@ end Tally;
 
 main.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 with Tally;       use Tally;
 
@@ -5250,7 +5250,7 @@ Solution
 
 tally.ads
 
-```
+```ada
 package Tally is
 
    type Counter is private;
@@ -5274,7 +5274,7 @@ end Tally;
 
 tally.adb
 
-```
+```ada
 package body Tally is
 
    procedure Add (C : in out Counter; By : Positive := 1) is
@@ -5294,7 +5294,7 @@ end Tally;
 
 main.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 with Tally;       use Tally;
 
@@ -5336,7 +5336,7 @@ Balance: 2100 cents
 
 bank_accounts.ads
 
-```
+```ada
 package Bank_Accounts is
 
    type Account is private;
@@ -5361,7 +5361,7 @@ end Bank_Accounts;
 
 main.adb
 
-```
+```ada
 with Ada.Text_IO;   use Ada.Text_IO;
 with Bank_Accounts; use Bank_Accounts;
 
@@ -5393,7 +5393,7 @@ Replace the line that subtracts from `Savings.Cents` with a call to `Withdraw`. 
 
 main.adb
 
-```
+```ada
 with Ada.Text_IO;   use Ada.Text_IO;
 with Bank_Accounts; use Bank_Accounts;
 
@@ -5422,7 +5422,7 @@ Run-time problems raise exceptions. You can catch them, recover, and raise your 
 
 safe_input.adb
 
-```
+```ada
 with Ada.Text_IO;    use Ada.Text_IO;
 with Ada.Exceptions; use Ada.Exceptions;
 
@@ -5489,7 +5489,7 @@ When an exception is raised, Ada abandons the rest of the current block and look
 
 propagate.adb
 
-```
+```ada
 with Ada.Text_IO;    use Ada.Text_IO;
 with Ada.Exceptions; use Ada.Exceptions;
 
@@ -5572,7 +5572,7 @@ Solution
 
 divide.adb
 
-```
+```ada
 with Ada.Text_IO;    use Ada.Text_IO;
 with Ada.Exceptions; use Ada.Exceptions;
 
@@ -5635,7 +5635,7 @@ Solution
 
 average.adb
 
-```
+```ada
 with Ada.Text_IO;       use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
@@ -5705,7 +5705,7 @@ Here's the fuel-tank deal as a procedure. The second call asks for 30 gallons wh
 
 tank_pre.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Tank_Pre is
@@ -5751,7 +5751,7 @@ A precondition protects the subprogram from bad calls. A postcondition protects 
 
 tank_post.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Tank_Post is
@@ -5810,7 +5810,7 @@ This is the part people find hardest, so it's worth being precise. A failed cont
 
 tank_input.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Tank_Input is
@@ -5863,7 +5863,7 @@ A range (lesson 7) can say "0 to 100", but it can't say "even" or "a vowel". A *
 
 predicates.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Predicates is
@@ -5972,7 +5972,7 @@ Solution
 
 withdraw_demo.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Withdraw_Demo is
@@ -6023,7 +6023,7 @@ Largest of 8, 2, 15: 15
 
 largest_demo.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Largest_Demo is
@@ -6071,7 +6071,7 @@ raised ADA.ASSERTIONS.ASSERTION_ERROR : failed postcondition from largest_demo.a
 
 largest_demo.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Largest_Demo is
@@ -6132,7 +6132,7 @@ Solution
 
 vowel_count.adb
 
-```
+```ada
 with Ada.Text_IO;             use Ada.Text_IO;
 with Ada.Characters.Handling; use Ada.Characters.Handling;
 
@@ -6235,7 +6235,7 @@ Solution
 
 gradebook.adb
 
-```
+```ada
 with Ada.Text_IO;           use Ada.Text_IO;
 with Ada.Integer_Text_IO;   use Ada.Integer_Text_IO;
 with Ada.Float_Text_IO;     use Ada.Float_Text_IO;
@@ -6400,7 +6400,7 @@ Solution
 
 guess.adb
 
-```
+```ada
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Numerics.Discrete_Random;
 
